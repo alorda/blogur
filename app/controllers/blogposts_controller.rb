@@ -19,6 +19,7 @@ class BlogpostsController < ApplicationController
   private
     def blogpost_params
       params.require(:blogpost).permit(:author, :email, :blogtitle, :blogtext)
+    end
 
 
 end

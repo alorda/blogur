@@ -1,9 +1,18 @@
 Rails.application.routes.draw do
   root 'blogposts#index'
 
-  resources :blogposts 
+  resources :blogposts
 
 end
+
+  # For the sake of learning, I will list the ReSTful routes below:
+  # get '/' = > "blogposts#index"
+  # get 'blogposts/new' = > "blogposts#new"
+  # get 'blogposts/:id' = > "blogposts#show", as: "show_blog"
+  # get 'blogposts/:id/edit' => "blogposts#edit", as: "edit_blog"
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

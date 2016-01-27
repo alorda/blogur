@@ -1,0 +1,15 @@
+<h2>You are the Blog: Post one!</h2>
+
+<%= form_for :blogposts, url: new_blogpost_path do |f| %>
+<ul>
+  <li><%= f.label :author %></li>
+  <li><%= f.text_field :author %></li>
+  <li><%= f.label :email %></li>
+  <li><%= f.text_field :email %></li>
+  <li><%= f.label :blogtitle %></li>
+  <li><%= f.text_field :blogtitle %></li>
+  <li><%= f.label :blogtext %></li>
+  <li><%= f.text_field :blogtext %></li>
+  <li><%= f.submit %></li>
+</ul>
+<% end %>
